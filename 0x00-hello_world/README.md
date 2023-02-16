@@ -1,1 +1,1 @@
-i'm supper happy to start my coding class
+this is my first coding project
