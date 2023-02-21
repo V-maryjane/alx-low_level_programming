@@ -1,1 +1,1 @@
-In this project, we will see how theuse functions, nested loop in C.
+this is my C programing file

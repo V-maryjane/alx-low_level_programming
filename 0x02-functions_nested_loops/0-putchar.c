@@ -1,14 +1,19 @@
-#include "main.h"
-#include <unistd.h>
+#include "main.
 
-/*
-* -putchar write the character in A to stdout.
-*  A the character to print.
-*  Return on success 1.
-*  on error -1 is return.
+/**
+* main - print _putchar and a new line.
+* return: Always 0
 */
-int - putchar(char);
-{
-	return (write(1, &A, i));
+int main(void)
 
+{
+        _putchar('-');
+        _putchar('u');
+        _putchar('t');
+        _putchar('c');
+        _putchar('h');
+        _putchar('a');
+        _putchar('r');
+        
+       return (0);
 }
