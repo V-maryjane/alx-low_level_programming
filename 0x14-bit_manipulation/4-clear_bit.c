@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * clear_bit - sets the value of a bit to 0 
+ * clear_bit - sets the value of a bit to 0
  * @n: number to modify
  * @index: index of the bit.
  *
