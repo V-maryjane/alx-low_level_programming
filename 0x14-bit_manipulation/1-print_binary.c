@@ -7,13 +7,19 @@
  *
  *Return: Nothing
  */
-
 void print_binary(unsigned long int n)
 {
-while (n > 1)
+	int y;
 
-print_binary(n >> 1);
+for (y = (sizeof(unsigned long int) * 8) - 1; y >= 0; y--)
+	{
+if ((n >> y) & 1)
+		{
+			printf("1");
+		}
 
-_putchar((n & 1) + '0');
+
+			printf("0");
+		}
 }
 

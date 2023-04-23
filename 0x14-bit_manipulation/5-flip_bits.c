@@ -1,25 +1,21 @@
 #include "main.h"
 #include <stdio.h>
-
 /**
- * flip_bits - number of bits
- * @n: first num
- * @m: second num
- *
- * Return: number of bits to flip
- */
+    * flip_bits - number of bits
+    * @n: first num
+    * @m: second num
+    *
+    * Return: number of bits to flip
+*/
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-unsigned int b = 0;
+unsigned long int mult = n ^ m;
+unsigned int mask = 0;
 
-for (n != 0 || m != 0)
-
-{
-if ((n & 1)  != (m & 1))
-b++;
-n = n >> 1;
-m = m >> 1;
+if (mult != 0)
+	{
+mask += mult & 1;
+mult >>= 1;
 	}
-return (b);
+return (mask);
 }
-
