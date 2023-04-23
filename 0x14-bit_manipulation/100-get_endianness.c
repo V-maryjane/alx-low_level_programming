@@ -6,7 +6,9 @@
  *
  * Return: if big endian-0 and if little endian - 1
  */
-
+int main(int argc, char *argv[])
+{
+}
 int get_endianness(void)
 {
 	int a = 1;
