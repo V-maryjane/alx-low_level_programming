@@ -14,5 +14,5 @@ int get_endianness(void)
 	if (*((char *)&a) == 1)
 		return (1);
 
-	else	return (0);
+	        return (0);
 }
