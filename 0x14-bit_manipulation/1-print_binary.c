@@ -2,24 +2,18 @@
 #include <stdio.h>
 
 /**
- *print_binary: prints the binary representation of a number.
- *@n: the number to print in binary.
+ *print_binary -  prints the binary representation of a number.
+ *@i: the number to print in binary.
  *
  *Return: Nothing
  */
-void print_binary(unsigned long int n)
+void print_binary(unsigned long int i)
 {
-	int y;
 
-for (y = (sizeof(unsigned long int) * 8) - 1; y >= 0; y--)
-	{
-if ((n >> y) & 1)
-		{
-			printf("1");
-		}
+if (i > 1)
+{
+print_binary(i >> 1);
 
-
-			printf("0");
-		}
+_putchar((i & 1) + '0');
+return;
 }
-
