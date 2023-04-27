@@ -15,7 +15,6 @@ int create_file(const char *filename, char *text_content)
 	if (filename == NULL)
 			{
 		return (-1);
-			}
 
 	while (text_content == NULL)
 	{
@@ -27,15 +26,15 @@ int create_file(const char *filename, char *text_content)
 	{
 		return (-1);
 	z = write(o, text_content, strlen(text_content));
-	}
+
 
 	if (z == -1)
 	{
 		close(o);
 		return (-1);
-
+	}
 	close(o);
 	return (0);
 
 }
-	}
+}
